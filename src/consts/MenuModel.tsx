@@ -1,6 +1,6 @@
 import { type CustomMenuItemCommandEvent } from "@/components/custom/Datatable/Datatable";
 import { Download, Eye, Pencil, Trash } from "lucide-react";
-import { type MenuItem } from "primereact/menuitem";
+import type { MenuItem } from "primereact/menuitem";
 
 /**
  * Genera un modelo de menú con las opciones Editar, Ver y Eliminar.
