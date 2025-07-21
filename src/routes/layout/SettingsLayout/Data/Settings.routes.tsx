@@ -1,3 +1,4 @@
+import type { LucideIconType } from "@/vite-env";
 import { PencilIcon, PlusIcon, Users, Users2 } from "lucide-react";
 
 interface DataInterface {
