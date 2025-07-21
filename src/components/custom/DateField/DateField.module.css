@@ -1,0 +1,75 @@
+.input__container {
+	display: flex;
+	gap: 10px;
+	> label {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 100%;
+		letter-spacing: 0%;
+		color: #000000;
+	}
+}
+.input__container[data-direction="row"] {
+	flex-direction: row;
+	justify-content: space-between;
+}
+.input__container[data-direction="column"] {
+	flex-direction: column;
+}
+
+.datefield {
+	height: 42px;
+	gap: 10px;
+
+	border-radius: 8px;
+
+	transition: all 0.3s ease;
+}
+
+.datefield:focus {
+	border-color: var(--primary-color) !important;
+	box-shadow: 0 0 0 2px var(--primary-color-light);
+	transform: translateY(-1px);
+}
+
+/* Animación de error */
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(-5px);
+	}
+	75% {
+		transform: translateX(5px);
+	}
+}
+
+.datefield.error {
+	animation: shake 0.5s ease-in-out;
+}
+
+/* Animación de éxito */
+@keyframes success {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.02);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.datefield.success {
+	animation: success 0.5s ease-in-out;
+}
+
+.datefield__container {
+	width: 100%;
+}
+.datefield__container > i {
+	color: var(--primary-color);
+}

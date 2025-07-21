@@ -1,0 +1,65 @@
+.content {
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.title {
+	color: #007c88;
+	font-weight: 600;
+}
+.date__container {
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+	align-items: center;
+	padding: 15px 10px 0px;
+}
+.date__title {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+
+	> h5 {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 100%;
+		letter-spacing: 0%;
+	}
+	> p {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 100%;
+		letter-spacing: 0%;
+		color: #676767;
+	}
+}
+.op__button {
+	gap: 10px;
+	max-height: 42px;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 1px solid #c9c9c9;
+	background: #fff;
+	color: black;
+	font-size: 14px;
+	font-weight: 600;
+}
+.footer__button {
+	display: flex;
+	padding-top: 10px;
+	justify-content: flex-end !important;
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	> button {
+		max-width: 215px;
+		max-height: 42px;
+	}
+}
+
+@keyframes slideDownFadeIn {
+	from {
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

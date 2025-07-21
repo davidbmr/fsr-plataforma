@@ -1,0 +1,207 @@
+.header__cells:first-child {
+	border-radius: 20px 0px 0px 0px;
+}
+.header__cells:last-child {
+	border-radius: 0px 0px 0px 0px;
+}
+.datatable {
+	border-radius: 10px;
+	overflow: hidden;
+	border: 1px solid #e9ecef;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header__cells {
+	background-color: var(--primary-color-app);
+	color: #007c88;
+	padding: 10px 30px;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+
+.header__cells::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+	transition: left 0.5s ease-in-out;
+}
+
+.header__cells:hover::before {
+	left: 100%;
+}
+
+.header__cells:hover {
+	background-color: #e8f4f5;
+	transform: translateY(-1px);
+	box-shadow: 0 2px 8px rgba(0, 124, 136, 0.2);
+}
+
+.body__cells {
+	background-color: white;
+	padding: 10px 30px !important;
+	transition: all 0.3s ease-in-out;
+	border: none;
+	position: relative;
+}
+
+.body__cells:hover {
+	background-color: #f8f9fa;
+	transform: translateX(2px);
+	box-shadow: inset 2px 0 0 var(--primary-color-app);
+}
+
+.body__cells:nth-child(even) {
+	background-color: #fafbfc;
+}
+
+.body__cells:nth-child(even):hover {
+	background-color: #f0f2f5;
+}
+
+/* Efectos para cada fila individual */
+.datatable tbody tr {
+	transition: all 0.3s ease-in-out;
+	padding: 8px 0;
+}
+
+.datatable tbody tr:hover {
+	background-color: #f8f9fa;
+
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.datatable tbody tr:nth-child(even) {
+	background-color: #fafbfc;
+}
+
+.datatable tbody tr:nth-child(even):hover {
+	background-color: #f0f2f5;
+}
+
+/* Padding adicional para las celdas del body */
+.datatable tbody td {
+	padding: 12px 16px;
+}
+
+/* Espaciado entre filas del body */
+.datatable tbody tr {
+	margin-bottom: 4px;
+}
+
+.header {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+
+	> div {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+}
+
+.buttons {
+	padding: 15px;
+
+	display: flex;
+	gap: 15px;
+	justify-content: end;
+}
+
+/* Estilos específicos para el botón "Agregar" */
+.createButton {
+	padding: 10px;
+	background: white !important;
+	color: #333 !important;
+	border: 0.5px solid #666 !important;
+	border-radius: 5px !important;
+	transition: all 0.3s ease-in-out !important;
+}
+
+.createButton:hover {
+	background: #f8f9fa !important;
+	border-color: #333 !important;
+	transform: translateY(-1px) !important;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Estilos específicos para el botón "Importar" */
+.exportButton {
+	padding: 10px;
+	background: #007c88 !important;
+	color: white !important;
+	border: none;
+	border-radius: 5px !important;
+	transition: all 0.3s ease-in-out !important;
+}
+
+.exportButton:hover {
+	background: #006d77 !important;
+	transform: translateY(-1px) !important;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.paginator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Botón de los 3 puntos */
+.optionsButton {
+	background: transparent;
+	border: none;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.2s;
+	cursor: pointer;
+	padding: 0;
+}
+
+.optionsButton:hover {
+	background: #f0f0f0;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+/* Menú contextual PrimeReact */
+.p-menu.p-component {
+	border-radius: 8px !important;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+	border: 1px solid #e0e0e0 !important;
+	min-width: 140px !important;
+	padding: 4px 0 !important;
+	background: #fff !important;
+}
+
+.p-menu .p-menuitem-link {
+	font-size: 14px !important;
+	padding: 8px 16px !important;
+	border-radius: 6px !important;
+	transition: background 0.2s, color 0.2s;
+}
+
+.p-menu .p-menuitem-link:hover {
+	background: #f5f5f5 !important;
+	color: #1976d2 !important;
+}
+
+.customMenuItem {
+	padding: 8px 18px;
+	border-radius: 6px;
+	transition: background 0.18s, color 0.18s;
+	cursor: pointer;
+}
+.customMenuItem:hover,
+.p-menuitem-link:hover {
+	background: #f5f5f5 !important;
+	color: #1976d2 !important;
+}

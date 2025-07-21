@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+	> h1 {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 120%;
+		letter-spacing: -2%;
+		vertical-align: middle;
+	}
+	> p {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 120%;
+		letter-spacing: -2%;
+		vertical-align: middle;
+	}
+}
+.children {
+    padding: 15px;
+}

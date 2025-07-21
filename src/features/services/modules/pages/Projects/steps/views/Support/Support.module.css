@@ -1,0 +1,53 @@
+.content {
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    padding: 0px 0px 20px;
+}
+.subtitle {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	> h3 {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 100%;
+		letter-spacing: 0%;
+	}
+	> p {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 100%;
+		letter-spacing: 0%;
+		color: #676767;
+	}
+}
+.radio__container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.footer__button {
+	display: flex;
+	padding-top: 10px;
+	justify-content: flex-end !important;
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	> button {
+		max-width: 215px;
+		max-height: 42px;
+	}
+}
+
+@keyframes slideDownFadeIn {
+	from {
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

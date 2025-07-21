@@ -1,0 +1,21 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.inputs {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+.footer__button {
+	display: flex;
+	padding-top: 10px;
+	justify-content: flex-end !important;
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	> button {
+		max-width: 215px;
+		max-height: 42px;
+	}
+}

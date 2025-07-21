@@ -1,0 +1,33 @@
+.content {
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.content > * {
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.6, 0, 0.3, 1.5);
+}
+.inputs {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+}
+
+.footer__button {
+	display: flex;
+	padding-top: 10px;
+	justify-content: flex-end !important;
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	> button {
+		max-width: 215px;
+		max-height: 42px;
+	}
+}
+
+@keyframes slideDownFadeIn {
+	from {
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

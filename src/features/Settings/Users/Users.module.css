@@ -1,0 +1,40 @@
+.filter {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	max-width: 500px;
+	gap: 15px;
+	padding: 15px 0px;
+}
+.status[data-status="true"] {
+	color: #2e792e;
+	background: #77cf77b4;
+}
+
+.status[data-status="false"] {
+	color: #a12c2c;
+	background: #f7bdbd;
+}
+
+.status {
+	max-width: 70px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.form__button_container {
+	display: flex;
+	justify-content: end;
+}
+.form__button {
+	width: 200px;
+	height: 40px;
+	background: #007c88;
+}

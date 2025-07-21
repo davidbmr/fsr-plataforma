@@ -1,0 +1,53 @@
+.pt__container {
+	display: flex;
+	gap: 15px;
+	padding: 0px 0px 25px;
+}
+.pj__form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+}
+.pn__form {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 15px;
+}
+.contact__inputs {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+	padding: 10px 0px;
+}
+.contact__inputs > * {
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pn__form > * {
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pj__form > * {
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.documents > * {
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__button {
+	display: flex;
+	padding-top: 10px;
+	justify-content: flex-end !important;
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	> button {
+		max-width: 215px;
+		max-height: 42px;
+	}
+}
+@keyframes slideDownFadeIn {
+	from {
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

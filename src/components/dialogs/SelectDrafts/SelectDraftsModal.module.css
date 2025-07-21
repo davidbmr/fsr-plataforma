@@ -1,0 +1,70 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+.content > * {
+	animation: slideDownFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input_filter {
+	display: grid;
+	padding: 10px 0px;
+	grid-template-columns: 1fr 0.1fr;
+	gap: 30px;
+}
+.input {
+	border-radius: 10px;
+	gap: 10px;
+	height: 45px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-width: 1px;
+	border: 1px solid #c9c9c9;
+}
+.button {
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 45px;
+	border-radius: 10px;
+	gap: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-width: 1px;
+	border: 1px solid #c9c9c9;
+	transition: transform 0.3s ease;
+}
+.button:active {
+	transform: rotate(180deg);
+}
+.list {
+	overflow-y: auto;
+	max-height: 700px;
+	width: 100%;
+	border-radius: 10px;
+	padding: 10px 0px;
+	border: 1px solid #c9c9c9;
+}
+.list__item {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px 0px;
+}
+
+@keyframes slideDownFadeIn {
+	from {
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

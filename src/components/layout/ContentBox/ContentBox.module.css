@@ -1,0 +1,40 @@
+.content__box {
+	border-top-width: 3px;
+	gap: 10px;
+	border-radius: 10px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	padding: 20px;
+	gap: 24px;
+	background-color: white;
+	border-top: 3px solid #007c88;
+	border-bottom: 1px solid #dedede;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+}
+.title__container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 25px;
+}
+.title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	> h1 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 100%;
+		letter-spacing: 0%;
+		color: #007c88;
+	}
+}
+.description {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: #676767;
+}
